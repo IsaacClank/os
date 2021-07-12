@@ -8,7 +8,7 @@ function main() {
 }
 
 function install_zsh() {
-  prompt "Installing zsh."
+  echo "Installing zsh."
 
   if apt --version &>/dev/null; then
     printf "\nDetect Debian-based distro\n"
@@ -20,7 +20,7 @@ function install_zsh() {
 }
 
 function install_zplug() {
-  prompt "Installing ZPlug"
+  echo "Installing ZPlug"
 
   export ZPLUG_HOME="$HOME/.zplug"
   git clone https://github.com/zplug/zplug $ZPLUG_HOME
